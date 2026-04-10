@@ -17,7 +17,6 @@
     box-sizing: border-box;
 }
 
-/* PREMIUM BACKGROUND */
 body {
     height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -38,7 +37,6 @@ canvas {
     inset: 0;
 }
 
-/* CONTENT */
 .container {
     position: relative;
     z-index: 2;
@@ -61,8 +59,6 @@ p {
     margin-bottom: 45px;
     transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
-
-/* LOADER */
 .loader {
     width: 220px;
     height: 2px;
@@ -117,7 +113,6 @@ p {
 </div>
 
 <script>
-/* CANVAS SETUP */
 const canvas = document.getElementById("stars");
 const ctx = canvas.getContext("2d");
 
@@ -129,7 +124,6 @@ function resize() {
 window.addEventListener("resize", resize);
 resize();
 
-/* CLEAN FLOATING STARS */
 const layers = [
     { count: 18, speed: 0.03, size: 0.5, alpha: 0.2 },
     { count: 22, speed: 0.05, size: 0.7, alpha: 0.35 },
@@ -174,7 +168,6 @@ function draw() {
 
 draw();
 
-/* SMOOTH TEXT SWITCHING */
 const lines = [
     "We’re crafting something clean and intentional.",
     "OSINT tools, built for performance and speed."
